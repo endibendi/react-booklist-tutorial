@@ -8,11 +8,6 @@ const Booklist = () => {
     <>
       <section className="booklist">
         <Book />
-        <Book />
-        <Book />
-        <Book />
-        <Book />
-        <Book />
       </section>
     </>
   );
@@ -21,20 +16,15 @@ const Booklist = () => {
 const Book = () => {
   return (
     <article className="book">
-      <Image />
-      <Title />
-      <Author />
+      <img
+        src="https://images-na.ssl-images-amazon.com/images/I/713mzPe9SwS._AC_UL200_SR200,200_.jpg"
+        alt=""
+      />
+      <h1>Atomic Habits: An Easy & Proven Way to…</h1>
+      <h4>James Clear</h4>
     </article>
   );
 };
-const Image = () => (
-  <img
-    src="https://images-na.ssl-images-amazon.com/images/I/713mzPe9SwS._AC_UL200_SR200,200_.jpg"
-    alt=""
-  />
-);
-const Title = () => <h1>Atomic Habits: An Easy & Proven Way to…</h1>;
-const Author = () => <h3>James Clear</h3>;
 
 ReactDom.render(<Booklist />, document.getElementById("root"));
 
