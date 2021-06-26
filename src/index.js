@@ -14,14 +14,16 @@ const Booklist = () => {
 };
 
 const Book = () => {
+  const title = "Atomic Habits: An Easy & Proven Way to…";
+  const author = "James Clear";
+  const imgUrl =
+    "https://images-na.ssl-images-amazon.com/images/I/713mzPe9SwS._AC_UL200_SR200,200_.jpg";
+
   return (
     <article className="book">
-      <img
-        src="https://images-na.ssl-images-amazon.com/images/I/713mzPe9SwS._AC_UL200_SR200,200_.jpg"
-        alt=""
-      />
-      <h1>Atomic Habits: An Easy & Proven Way to…</h1>
-      <h4>James Clear</h4>
+      <img src={imgUrl} alt="" />
+      <h1>{title}</h1>
+      <h4>{author}</h4>
     </article>
   );
 };
